@@ -11,8 +11,9 @@ export const Favorites = () => {
           {ITEMS.map((ITEM) => {
               if (favoriteItems[ITEM.id] === true) {
                   return <FavoritesItem itemData={ITEM}/>
+              } else {
+                return null;
               }
-              return null;
           })}
       </div>
     </div>
