@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/gsources/static/css/main.22b14f88.css",
+    "main.js": "/gsources/static/js/main.c5d744e7.js",
+    "static/media/happyhues-logo.avif": "/gsources/static/media/happyhues-logo.85627bda96e76bb62875.avif",
+    "static/media/html-logo.png": "/gsources/static/media/html-logo.9b674892ef5960bafca3.png",
+    "static/media/zeplin-logo.png": "/gsources/static/media/zeplin-logo.5f0972f3121666da7998.png",
+    "static/media/css-logo.png": "/gsources/static/media/css-logo.603bcb730b4f65fab87c.png",
+    "static/media/khroma-logo.png": "/gsources/static/media/khroma-logo.6494d7c2cd2e60481604.png",
+    "static/media/gsources-logo.png": "/gsources/static/media/gsources-logo.b8bbe17d26f1fd6d1462.png",
+    "static/media/ionicon-logo.avif": "/gsources/static/media/ionicon-logo.6588f28637ec2640a388.avif",
+    "index.html": "/gsources/index.html",
+    "main.22b14f88.css.map": "/gsources/static/css/main.22b14f88.css.map",
+    "main.c5d744e7.js.map": "/gsources/static/js/main.c5d744e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22b14f88.css",
+    "static/js/main.c5d744e7.js"
+  ]
+}
