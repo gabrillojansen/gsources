@@ -12,6 +12,7 @@ export const Favorites = () => {
               if (favoriteItems[ITEM.id] === true) {
                   return <FavoritesItem itemData={ITEM}/>
               }
+              return null;
           })}
       </div>
     </div>
