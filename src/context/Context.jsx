@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import { ITEMS } from '../data/ITEMS';
 
 export const Context = createContext(null);
@@ -13,7 +13,10 @@ const getDefaultFavorites = () => {
 
 export const ContextProvider = (props) => {
     const [isMenuActive, setIsMenuActive] = useState(false);
-    const [favoriteItems, setFavoriteItems] = useState(getDefaultFavorites());
+    const [favoriteItems, setFavoriteItems] = useState(() => {
+        const storedFavorites = JSON.parse(localStorage.getItem("isFavorites"));
+        return storedFavorites || getDefaultFavorites();
+    });
 
     const handleMenuClick = () => {
         setIsMenuActive(!isMenuActive)
@@ -35,6 +38,10 @@ export const ContextProvider = (props) => {
         }
         return count;
     }
+
+    useEffect(() => {
+        localStorage.setItem("isFavorites", JSON.stringify(favoriteItems));
+    }, [favoriteItems])
 
     const ContextValue = {
         ITEMS,
