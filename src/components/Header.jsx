@@ -2,13 +2,14 @@ import React, { useContext, useState } from "react";
 import gsourcesLogo from "../assets/gsources-logo.png";
 import { IoMdMenu } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdOutlineDarkMode } from "react-icons/md";
+import { MdOutlineDarkMode, MdLightMode } from "react-icons/md";
 import { Context } from "../context/Context";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
   const { handleMenuClick, isMenuActive } = useContext(Context);
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleHeaderFixed = () => {
     if (window.scrollY >= 10) {
@@ -37,7 +38,12 @@ export const Header = () => {
           <Link to="https://www.linkedin.com/in/jansen-gabrillo-82ab96299/">
             <FaLinkedin size={18} className="text-[#FDFEFE] cursor-pointer hover:text-gray-600 duration-300 ease-in-out"/>
           </Link>
-            <MdOutlineDarkMode size={18} className="text-[#FDFEFE] cursor-pointer hover:text-gray-600 duration-300 ease-in-out"/>
+          <div onClick={() => setDarkMode(!darkMode)}>
+            { darkMode ? 
+            <MdLightMode size={18} className="text-[#FDFEFE] cursor-pointer hover:text-gray-600 duration-300 ease-in-out"/> : 
+            <MdOutlineDarkMode size={18} className="text-[#FDFEFE] cursor-pointer hover:text-gray-600 duration-300 ease-in-out"/> 
+            }
+          </div>
         </div>
     </div>
   )
