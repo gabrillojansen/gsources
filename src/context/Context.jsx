@@ -3,6 +3,7 @@ import { ITEMS } from '../data/ITEMS';
 
 export const Context = createContext(null);
 
+// FAVORITES DEFAULT VALUE
 const getDefaultFavorites = () => {
     let isFavorites = {};
     for (let i = 1; i < ITEMS.length + 1; i++) {
@@ -12,37 +13,48 @@ const getDefaultFavorites = () => {
 }
 
 export const ContextProvider = (props) => {
+    // MENU
     const [isMenuActive, setIsMenuActive] = useState(false);
+    const handleMenuClick = () => {
+        setIsMenuActive(!isMenuActive)
+    }
+
+    // DARKMODE
     const [isDarkMode, setIsDarkMode] = useState(() => {
         const storedisDarkMode = localStorage.getItem("isDarkMode");
         return storedisDarkMode ? JSON.parse(storedisDarkMode) : false;
     });
+    const hanldeDarkMode = () => {
+        setIsDarkMode(!isDarkMode);
+    };
+    useEffect(() => {
+        localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
+    }, [isDarkMode]);
     
-    // Retrieve the items saved from the local storage
+    // LINKS
     const [isLinkActive, setIsLinkActive] = useState(() => {
         const storedIsLinkActive = localStorage.getItem("isLinkActive");
         return storedIsLinkActive ? JSON.parse(storedIsLinkActive) : "All";
     });
-
-    const hanldeDarkMode = () => {
-        setIsDarkMode(!isDarkMode);
+    const handleLinkClicked = (label) => {
+        setIsLinkActive(label)
+        handleMenuClick();
+        window.scrollTo(0, 0);
     }
     useEffect(() => {
-        localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
-    }, [isDarkMode])
+        localStorage.setItem("isLinkActive", JSON.stringify(isLinkActive));
+    }, [isLinkActive])
 
-    // Retrieve the items saved from the local storage
+    // FAVORITE ITEMS
     const [favoriteItems, setFavoriteItems] = useState(() => {
         const storedFavorites = JSON.parse(localStorage.getItem("isFavorites"));
         return storedFavorites || getDefaultFavorites();
     });
-
-    // Handle menu click funtion
-    const handleMenuClick = () => {
-        setIsMenuActive(!isMenuActive)
-    }
+    useEffect(() => {
+        localStorage.setItem("isFavorites", JSON.stringify(favoriteItems));
+    }, [favoriteItems])
     
-    // Handle bookmark click funtion
+    // BOOKAMRK
     const handleBookmarkClick = (itemId) => {
         setFavoriteItems((prev) => (
             { ...prev, [itemId]: prev[itemId] === false ? true : false }
@@ -50,7 +62,7 @@ export const ContextProvider = (props) => {
         console.log(favoriteItems);
     }
 
-    // Count of favorite items
+    // COUNT OF FAVORITE ITEMS
     const countOfFavoriteItems = () => {
         let count = 0;
         for (let i = 1; i < ITEMS.length + 1; i++) {
@@ -61,23 +73,7 @@ export const ContextProvider = (props) => {
         return count;
     }
 
-    // Save the favorite items into local storage
-    useEffect(() => {
-        localStorage.setItem("isFavorites", JSON.stringify(favoriteItems));
-    }, [favoriteItems])
-
-    // Handle link clicked function
-    const handleLinkClicked = (label) => {
-      setIsLinkActive(label)
-      handleMenuClick();
-      window.scrollTo(0, 0);
-    }
-    // Save the link active into local storage
-    useEffect(() => {
-        localStorage.setItem("isLinkActive", JSON.stringify(isLinkActive));
-    }, [isLinkActive])
-
-    // Context Value
+    // CONTEXT VALUE
     const ContextValue = {
         ITEMS,
         handleMenuClick,
