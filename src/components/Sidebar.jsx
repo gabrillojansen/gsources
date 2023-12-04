@@ -1,39 +1,20 @@
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 import gsourcesLogo from "../assets/gsources-logo.png"
-import { TbSlash } from "react-icons/tb";
-import { AiOutlineHtml5 } from "react-icons/ai";
-import { LuPaintBucket } from "react-icons/lu";
-import { RiJavascriptLine } from "react-icons/ri";
-import { IoColorPaletteOutline, IoDocumentTextOutline } from "react-icons/io5";
-import { MdInsertEmoticon, MdFavoriteBorder, MdFlipToFront } from "react-icons/md";
+import { sidebarCategory } from "../data/sidebarCategory";
+import { sidebarOthers } from "../data/sidebarOthers";
 import { Context } from "../context/Context";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 export const Sidebar = () => {
-  const { handleMenuClick, isMenuActive, countOfFavoriteItems } = useContext(Context);
-  const [isLinkActive, setIsLinkActive] = useState("All");
+  const { 
+    handleMenuClick,
+    isMenuActive,
+    countOfFavoriteItems,
+    handleLinkClicked,
+    isLinkActive 
+  } = useContext(Context);
 
-  const sidebarCategory = [
-    { icon: <TbSlash />, label: "All", to: "/" },
-    { icon: <IoColorPaletteOutline />, label: "Colors", to: "/colors" },
-    { icon: <LuPaintBucket />, label: "Design Tools", to: "/design-tools" },
-    { icon: <IoDocumentTextOutline />, label: "Documentations", to: "/documentations" },
-    { icon: <MdFlipToFront />, label: "Frontend Tools", to: "/frontend-tools" },
-    { icon: <AiOutlineHtml5 />, label: "HTML Templates", to: "/html-templates" },
-    { icon: <MdInsertEmoticon />, label: "Icons", to: "/icons" },
-    { icon: <RiJavascriptLine />, label: "JS Libraries", to: "/javascript-libraries" },
-  ];
-
-  const sidebarOthers = [
-    { icon: <MdFavoriteBorder/>, label: "Favorites", to: "/favorites" }
-  ];
-
-  const handleLinkClicked = (label) => {
-    setIsLinkActive(label)
-    handleMenuClick();
-    window.scrollTo(0, 0);
-  }
 
   return (
     <div className="w-full h-full flex flex-col">
@@ -49,7 +30,7 @@ export const Sidebar = () => {
 
         <div className="flex flex-col gap-8 px-4">
           <ul className="pb-8 border-b border-solid border-[#7B7D7D]">
-            { sidebarCategory.map((sCategory, index) => {
+            {sidebarCategory.map((sCategory, index) => {
               return <Link to={sCategory.to} key={index}>
               <li onClick={() => handleLinkClicked(sCategory.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem] transition-[.3s] ${isLinkActive === sCategory.label ? "bg-[#17202A]" : "hover:bg-[#212F3D]"}`}>
                 <span className="text-[18px] text-[#D0D3D4]">{sCategory.icon}</span>
@@ -59,7 +40,7 @@ export const Sidebar = () => {
             })}
           </ul>
           <ul>
-            { sidebarOthers.map((sOthers, index) => {
+            {sidebarOthers.map((sOthers, index) => {
               return <Link to={sOthers.to} key={index}>
               <li onClick={() => handleLinkClicked(sOthers.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem] transition-[.3s] relative ${isLinkActive === sOthers.label ? "bg-[#17202A]" : "hover:bg-[#212F3D]"}`}>
                 <span className="text-[18px] text-[#D0D3D4]">{sOthers.icon}</span>
