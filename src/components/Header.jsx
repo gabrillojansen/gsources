@@ -8,7 +8,13 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
-  const { handleMenuClick, isMenuActive, hanldeDarkMode, isDarkMode } = useContext(Context);
+  
+  const { 
+    handleMenuClick,
+    isMenuActive,
+    hanldeDarkMode,
+    isDarkMode
+  } = useContext(Context);
 
   const handleHeaderFixed = () => {
     if (window.scrollY >= 10) {
