@@ -8,8 +8,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
-  const { handleMenuClick, isMenuActive } = useContext(Context);
-  const [darkMode, setDarkMode] = useState(false);
+  const { handleMenuClick, isMenuActive, hanldeDarkMode, isDarkMode } = useContext(Context);
 
   const handleHeaderFixed = () => {
     if (window.scrollY >= 10) {
@@ -38,8 +37,8 @@ export const Header = () => {
           <Link to="https://www.linkedin.com/in/jansen-gabrillo-82ab96299/">
             <FaLinkedin size={18} className="text-[#FDFEFE] cursor-pointer hover:text-gray-600 duration-300 ease-in-out"/>
           </Link>
-          <div onClick={() => setDarkMode(!darkMode)}>
-            { darkMode ? 
+          <div onClick={hanldeDarkMode}>
+            { isDarkMode ? 
             <MdLightMode size={18} className="text-[#FDFEFE] cursor-pointer hover:text-gray-600 duration-300 ease-in-out"/> : 
             <MdOutlineDarkMode size={18} className="text-[#FDFEFE] cursor-pointer hover:text-gray-600 duration-300 ease-in-out"/> 
             }

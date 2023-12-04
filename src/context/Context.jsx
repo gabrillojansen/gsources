@@ -13,12 +13,23 @@ const getDefaultFavorites = () => {
 
 export const ContextProvider = (props) => {
     const [isMenuActive, setIsMenuActive] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        const storedisDarkMode = localStorage.getItem("isDarkMode");
+        return storedisDarkMode ? JSON.parse(storedisDarkMode) : false;
+    });
     
     // Retrieve the items saved from the local storage
     const [isLinkActive, setIsLinkActive] = useState(() => {
         const storedIsLinkActive = localStorage.getItem("isLinkActive");
         return storedIsLinkActive ? JSON.parse(storedIsLinkActive) : "All";
     });
+
+    const hanldeDarkMode = () => {
+        setIsDarkMode(!isDarkMode);
+    }
+    useEffect(() => {
+        localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
+    }, [isDarkMode])
 
     // Retrieve the items saved from the local storage
     const [favoriteItems, setFavoriteItems] = useState(() => {
@@ -71,6 +82,8 @@ export const ContextProvider = (props) => {
         ITEMS,
         handleMenuClick,
         isMenuActive,
+        hanldeDarkMode,
+        isDarkMode,
         handleBookmarkClick,
         favoriteItems,
         countOfFavoriteItems,
