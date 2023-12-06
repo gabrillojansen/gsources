@@ -36,7 +36,7 @@ export const Header = () => {
             onClick={handleMenuClick} 
             >
               <IoMdMenu className="text-[30px] text-[#FDFEFE] group-hover:text-[#566573] transition-[.3s]"/>
-              <p className="w-[15px] h-[15px] bg-[#DC7633] text-[11px] text-[#D0D3D4] rounded-[5px] flex items-center justify-center absolute top-[-1+px] right-[-2px] border border-solid border-[#17202A]">{countOfFavoriteItems()}</p>
+              <p className="w-[15px] h-[15px] bg-[#DC7633] text-[11px] text-[#D0D3D4] rounded-[5px] flex items-center justify-center absolute top-[-1px] right-[-2px] border border-solid border-[#17202A]">{countOfFavoriteItems()}</p>
             </div>
             <div className="flex items-center gap-[.1rem] cursor-pointer"
             onClick={() => window.scrollTo(0, 0)}
