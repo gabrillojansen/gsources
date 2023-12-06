@@ -17,7 +17,7 @@ export const Sidebar = () => {
 
   return (
     <div className="w-full h-full flex flex-col">
-      <div className={`fixed top-0 pt-[1rem] w-[300px] h-full bg-[#2C3E50] z-40 transition-[1s]
+      <div className={`fixed top-0 pt-[1rem] w-[230px] h-full bg-[#2C3E50] z-40 transition-[1s]
       ${isMenuActive ? "ml-[0]" : "ml-[-500px]"} overflow-y-scroll`}
       >
         <div className="flex items-center justify-between px-4 mb-8">
