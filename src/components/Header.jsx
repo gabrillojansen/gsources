@@ -35,13 +35,13 @@ export const Header = () => {
             <div className="cursor-pointer group relative"
             onClick={handleMenuClick} 
             >
-              <IoMdMenu className="text-[30px] text-[#FDFEFE] group-hover:text-[#566573] transition-[.3s]"/>
-              <p className="w-[15px] h-[15px] bg-[#DC7633] text-[11px] text-[#D0D3D4] rounded-[5px] flex items-center justify-center absolute top-[-1px] right-[-2px] border border-solid border-[#17202A]">{countOfFavoriteItems()}</p>
+              <IoMdMenu className="text-[25px] sm:text-[30px] text-[#FDFEFE] group-hover:text-[#566573] transition-[.3s]"/>
+              <p className="w-[15px] h-[15px] bg-[#DC7633] text-[11px] text-[#D0D3D4] rounded-[5px] flex items-center justify-center absolute top-[-1px] right-[-5px] border border-solid border-[#17202A]">{countOfFavoriteItems()}</p>
             </div>
             <div className="flex items-center gap-[.1rem] cursor-pointer"
             onClick={() => window.scrollTo(0, 0)}
             >
-              <img className="w-[30px] rounded-[5px]" src={gsourcesLogo} alt="" />
+              <img className="w-[25px] sm:w-[30px] rounded-[5px]" src={gsourcesLogo} alt="" />
               <p className="hidden sm:block text-[25px] text-[#FDFEFE] cursor-pointer">sources.</p>
             </div>
         </div>
