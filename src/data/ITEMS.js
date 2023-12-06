@@ -1,4 +1,4 @@
-import reactIcon from "../assets/react-icon.jpg"
+import gsourcesLogo from "../assets/gsources-logo.png"
 import htmlLogo from "../assets/html-logo.png"
 import cssLogo from "../assets/css-logo.png"
 import figmaLogo from "../assets/figma-logo.png"
@@ -12,6 +12,11 @@ import happyhuesLogo from "../assets/happyhues-logo.avif"
 import feathericonsLogo from "../assets/feathericons-logo.png"
 import ioniconsLogo from "../assets/ionicon-logo.avif"
 import colorhuntLogo from "../assets/colorhunt-logo.png"
+import htmlColorCodesLogo from "../assets/logo-html-color-codes-logo.png"
+import coolorsLogo from "../assets/coolors-logo.png"
+import brandcolorsLogo from "../assets/brandcolors-logo.png"
+import blobmakerLogo from "../assets/blobmaker-logo.jpg"
+import softrLogo from "../assets/softr-logo.png"
 
 export const ITEMS = [
     {
@@ -32,7 +37,7 @@ export const ITEMS = [
     },
     {
         id: 3,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "Devdocs.io",
         description: "DevDocs Combines Multiple API Documentations",
         url: "https://devdocs.io/",
@@ -61,42 +66,42 @@ export const ITEMS = [
     },
     {
         id: 7,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "CSS Buttons",
         description: "Click on your desired button and copy the HTML & CSS",
         category: "frontend-tools",
     },
     {
         id: 8,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "UIVERSE.IO",
         description: "Library of free and customizable ui elements made with CSS or Tailwind",
         category: "frontend-tools",
     },
     {
         id: 9,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "Transition css",
         description: "Drop-in CSS transitions",
         category: "frontend-tools",
     },
     {
         id: 10,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "Atropos Js",
         description: "JavaScript library to create stunning touch-friendly 3D parallax hover effects",
         category: "javascript-libraries",
     },
     {
         id: 11,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "Anime Js",
         description: "Anime.Js is a lightweight JavaScript animation library",
         category: "javascript-libraries",
     },
     {
         id: 12,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "GSAP",
         description: "A widly robust JavaScript animation library built for professionals",
         category: "javascript-libraries",
@@ -145,7 +150,7 @@ export const ITEMS = [
     },
     {
         id: 19,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "Streamline",
         description: "Over 30,000 something icons",
         category: "icons",
@@ -166,91 +171,91 @@ export const ITEMS = [
     },
     {
         id: 22,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "HTML5 UP",
         description: "Free HTML5 templates",
         category: "html-templates",
     },
     {
         id: 23,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "Webflow",
         description: "Free website templates",
         category: "html-templates",
     },
     {
         id: 24,
-        image: reactIcon,
+        image: coolorsLogo,
         title: "Coolors",
         description: "Fast color schemes generator",
         category: "colors",
     },
     {
         id: 25,
-        image: reactIcon,
+        image: brandcolorsLogo,
         title: "Brand Colors",
         description: "Biggest collection of official brand color codes",
         category: "colors",
     },
     {
         id: 26,
-        image: reactIcon,
+        image: htmlColorCodesLogo,
         title: "HTML Color Codes",
         description: "Get HTML color codes, Hex color codes, RGB and HSL values with our color picker",
         category: "colors",
     },
     {
         id: 27,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "Magic Pattern",
         description: "Css gradient generator",
         category: "frontend-tools",
     },
     {
         id: 28,
-        image: reactIcon,
+        image: softrLogo,
         title: "Softr",
         description: "A collection of free tools that you can use to create designs",
         category: "frontend-tools",
     },
     {
         id: 29,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "100L5",
         description: "Free all-in-one toolbox",
         category: "frontend-tools",
     },
     {
         id: 30,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "Get Waves",
         description: "Make some waves!",
         category: "frontend-tools",
     },
     {
         id: 31,
-        image: reactIcon,
+        image: blobmakerLogo,
         title: "Blob Maker",
         description: "Make organic svg shapes for your next design",
         category: "frontend-tools",
     },
     {
         id: 32,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "Haikei",
         description: "Haikei is a web app to generate stunning visual content",
         category: "frontend-tools",
     },
     {
         id: 33,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "Clippy",
         description: "The clip-path property allows you to make complex shapes in css",
         category: "frontend-tools",
     },
     {
         id: 34,
-        image: reactIcon,
+        image: gsourcesLogo,
         title: "SheCodes",
         description: "Everything you nedd to generate awesome css for your next project",
         category: "frontend-tools",
