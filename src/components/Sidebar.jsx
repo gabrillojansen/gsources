@@ -17,13 +17,17 @@ export const Sidebar = () => {
 
   return (
     <div className="w-full h-full flex flex-col">
-      <div className={`fixed top-0 pt-[1rem] w-[300px] h-full bg-[#2C3E50] z-40 transition-[1s] ${isMenuActive ? "ml-[0]" : "ml-[-500px]"} overflow-y-scroll`}>
+      <div className={`fixed top-0 pt-[1rem] w-[300px] h-full bg-[#2C3E50] z-40 transition-[1s]
+      ${isMenuActive ? "ml-[0]" : "ml-[-500px]"} overflow-y-scroll`}
+      >
         <div className="flex items-center justify-between px-4 mb-8">
           <div className="flex items-center cursor-pointer">
             <img className="w-[30px] rounded-[5px]" src={gsourcesLogo} alt="" />
           </div>
-          <div className="flex items-center justofy-between w-[30px] h-[30px] rounded-[5px] bg-[#17202A]" onClick={handleMenuClick}>
-            <IoMdClose className="text-[20px] text-[#979A9A] ml-[5px] cursor-pointer transition-[.3s] hover:text-[#D0D3D4]"/>
+          <div className="flex items-center w-[30px] h-[30px] rounded-[5px] bg-[#17202A] group"
+          onClick={handleMenuClick}
+          >
+            <IoMdClose className="text-[20px] text-[#979A9A] ml-[5px] cursor-pointer transition-[1s] group-hover:rotate-[90deg]"/>
           </div>
         </div>
 
