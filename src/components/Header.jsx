@@ -26,8 +26,6 @@ export const Header = () => {
   }
   window.addEventListener("scroll", handleHeaderFixed);
 
-  
-
   return (
     <div className={`w-full flex items-center justify-between p-4 transition 
     ${isMenuActive ? "shadow-none" : "bg-[--header] z-10"}
