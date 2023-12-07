@@ -7,6 +7,7 @@ import { ContextProvider } from "./context/Context";
 import { Content } from "./components/Content";
 import { Footer } from "./components/Footer";
 import { Favorites } from "./pages/Favorites";
+import { ArrowUp } from "./components/ArrowUp";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/favorites" element={<Favorites />}/>
         </Routes>
         <Footer />
+        <ArrowUp />
         </BrowserRouter>
       </ContextProvider>
     </div>
