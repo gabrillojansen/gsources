@@ -44,7 +44,7 @@ export const Header = () => {
             onClick={() => window.scrollTo(0, 0)}
             >
               <img className="w-[25px] sm:w-[30px] rounded-[5px]" src={gsourcesLogo} alt="" />
-              <p className="hidden sm:block text-[25px] text-[--header-text] cursor-pointer">sources.</p>
+              <p className="hidden md:block text-[25px] text-[--header-text] cursor-pointer">sources.</p>
             </div>
         </div>
         <div className="flex gap-4">
