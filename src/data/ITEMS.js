@@ -17,6 +17,17 @@ import coolorsLogo from "../assets/coolors-logo.png"
 import brandcolorsLogo from "../assets/brandcolors-logo.png"
 import blobmakerLogo from "../assets/blobmaker-logo.jpg"
 import softrLogo from "../assets/softr-logo.png"
+import uiverseioLogo from "../assets/uiverseio-logo.png"
+import atroposjsLogo from "../assets/atroposjs-logo.png"
+import animejsLogo from "../assets/animejs-logo.jpg"
+import gsapLogo from "../assets/gsap-logo.jpg"
+import html5upLogo from "../assets/html5up-logo.png"
+import webflowLogo from "../assets/webflow-logo.jpg"
+import magicpatternLogo from "../assets/magicpattern-logo.jpg"
+import l5Logo from "../assets/100l5-logo.png"
+import getwavesLogo from "../assets/getwaves-logo.png"
+import haikeiLogo from "../assets/haikei-logo.jpg"
+import shecodesLogo from "../assets/shecodes-logo.gif"
 
 export const ITEMS = [
     {
@@ -77,7 +88,7 @@ export const ITEMS = [
     },
     {
         id: 8,
-        image: gsourcesLogo,
+        image: uiverseioLogo,
         title: "UIVERSE.IO",
         description: "Library of free and customizable ui elements made with CSS or Tailwind",
         url: "https://uiverse.io/",
@@ -93,7 +104,7 @@ export const ITEMS = [
     },
     {
         id: 10,
-        image: gsourcesLogo,
+        image: atroposjsLogo,
         title: "Atropos Js",
         description: "JavaScript library to create stunning touch-friendly 3D parallax hover effects",
         url: "https://atroposjs.com/",
@@ -101,7 +112,7 @@ export const ITEMS = [
     },
     {
         id: 11,
-        image: gsourcesLogo,
+        image: animejsLogo,
         title: "Anime Js",
         description: "Anime.Js is a lightweight JavaScript animation library",
         url: "https://animejs.com/",
@@ -109,7 +120,7 @@ export const ITEMS = [
     },
     {
         id: 12,
-        image: gsourcesLogo,
+        image: gsapLogo,
         title: "GSAP",
         description: "A widly robust JavaScript animation library built for professionals",
         url: "https://gsap.com/",
@@ -189,7 +200,7 @@ export const ITEMS = [
     },
     {
         id: 22,
-        image: gsourcesLogo,
+        image: html5upLogo,
         title: "HTML5 UP",
         description: "Free HTML5 templates",
         url: "https://html5up.net/",
@@ -197,7 +208,7 @@ export const ITEMS = [
     },
     {
         id: 23,
-        image: gsourcesLogo,
+        image: webflowLogo,
         title: "Webflow",
         description: "Free website templates",
         url: "https://webflow.com/free-website-templates",
@@ -229,7 +240,7 @@ export const ITEMS = [
     },
     {
         id: 27,
-        image: gsourcesLogo,
+        image: magicpatternLogo,
         title: "Magic Pattern",
         description: "Css gradient generator",
         url: "https://www.magicpattern.design/tools/gradient-generator",
@@ -245,7 +256,7 @@ export const ITEMS = [
     },
     {
         id: 29,
-        image: gsourcesLogo,
+        image: l5Logo,
         title: "100L5",
         description: "Free all-in-one toolbox",
         url: "https://10015.io/",
@@ -253,7 +264,7 @@ export const ITEMS = [
     },
     {
         id: 30,
-        image: gsourcesLogo,
+        image: getwavesLogo,
         title: "Get Waves",
         description: "Make some waves!",
         url: "https://getwaves.io/",
@@ -269,7 +280,7 @@ export const ITEMS = [
     },
     {
         id: 32,
-        image: gsourcesLogo,
+        image: haikeiLogo,
         title: "Haikei",
         description: "Haikei is a web app to generate stunning visual content",
         url: "https://haikei.app/",
@@ -285,7 +296,7 @@ export const ITEMS = [
     },
     {
         id: 34,
-        image: gsourcesLogo,
+        image: shecodesLogo,
         title: "SheCodes",
         description: "Everything you nedd to generate awesome css for your next project",
         url: "https://generators.shecodes.io/",
