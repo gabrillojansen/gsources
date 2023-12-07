@@ -2,17 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color1: #FDFEFE;
+  --color2: #17202A;
+  --color3: #D0D3D4;
+  --item-shadow: #E5E7E9;
+  --image-border: #E5E7E9;
+  --item-title: #17202A;
+  --item-description: #ABB2B9;
+}
+
+[color-scheme="dark"] {
+  --color1: #17202A;
+  --color2: #FDFEFE;
+  --color3: #2C3E50;
+  --item-shadow: #2C3E50;
+  --image-border: #2C3E50;
+  --item-title: #FDFEFE;
+  --item-description: #566573;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 * {
     box-sizing: border-box;
+    transition: .5s;
 }
 
 body {
     width: 100%;
-    background-color: #17202A;
+    background-color: var(--color1);
 }
 
 /* src/index.css */

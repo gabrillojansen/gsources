@@ -8,14 +8,14 @@ export const Item = (props) => {
     const { handleBookmarkClick, favoriteItems } = useContext(Context);
 
   return (
-    <div className="w-[280px] h-[150px] rounded-xl shadow-lg shadow-[#2C3E50] p-4 cursor-pointer transition hover:scale-105 relative">
+    <div className="w-[280px] h-[150px] rounded-xl shadow-lg shadow-[--item-shadow] p-4 cursor-pointer transition hover:scale-105 relative">
       <div className="absolute right-4 text-[#DC7633]" onClick={() => handleBookmarkClick(id)}>
       { favoriteItems[id] === false ? <IoBookmarkOutline size={20}/> : <IoBookmark size={20}/> }
       </div>
       <Link to={url}>
-        <img className="w-[40px] h-[40px] border border-solid border-[#212F3D] rounded mb-4" src={image} alt="" />
-        <h2 className="text-[#D0D3D4]">{title}</h2>
-        <p className="text-[10px] text-[#626567]">{description}</p>
+        <img className="w-[40px] h-[40px] border border-solid border-[--image-border] rounded mb-4" src={image} alt="" />
+        <h2 className="text-[--item-title]">{title}</h2>
+        <p className="text-[10px] text-[--item-description]">{description}</p>
       </Link>
     </div>
   )

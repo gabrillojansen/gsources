@@ -26,6 +26,11 @@ export const ContextProvider = (props) => {
     });
     const hanldeDarkMode = () => {
         setIsDarkMode(!isDarkMode);
+        if (!isDarkMode) {
+            document.querySelector("body").setAttribute("color-scheme", "dark");
+        } else {
+            document.querySelector("body").removeAttribute("color-scheme", "dark");
+        }
     };
     useEffect(() => {
         localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
