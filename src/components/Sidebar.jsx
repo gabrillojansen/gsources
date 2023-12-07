@@ -37,7 +37,7 @@ export const Sidebar = () => {
               return <Link to={sCategory.to} key={index}>
               <li onClick={() => handleLinkClicked(sCategory.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem] transition-[1s] ${isLinkActive === sCategory.label ? "bg-[--sidebar-category-active]" : "hover:bg-[--sidebar-category-hover]"}`}>
                 <span className="text-[18px] text-[--sidebar-icon]">{sCategory.icon}</span>
-                <p className="text-[15px] text-[#979A9A]">{sCategory.label}</p>
+                <p className="text-[15px] text-[--sidebar-text]">{sCategory.label}</p>
               </li>
               </Link>
             })}
@@ -45,9 +45,9 @@ export const Sidebar = () => {
           <ul>
             {sidebarOthers.map((sOthers, index) => {
               return <Link to={sOthers.to} key={index}>
-              <li onClick={() => handleLinkClicked(sOthers.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem] transition-[1s] relative ${isLinkActive === sOthers.label ? "bg-[#17202A]" : "hover:bg-[#212F3D]"}`}>
+              <li onClick={() => handleLinkClicked(sOthers.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem] transition-[1s] relative ${isLinkActive === sOthers.label ? "bg-[--sidebar-category-active]" : "hover:bg-[--sidebar-category-hover]"}`}>
                 <span className="text-[18px] text-[--sidebar-icon]">{sOthers.icon}</span>
-                <p className="text-[15px] text-[#979A9A]">{sOthers.label}</p>
+                <p className="text-[15px] text-[--sidebar-text]">{sOthers.label}</p>
                 <p className="absolute right-2 w-[20px] h-[20px] bg-[#DC7633] text-[13px] text-[#D0D3D4] rounded-[5px] flex items-center justify-center">{countOfFavoriteItems()}</p>
               </li>
               </Link>

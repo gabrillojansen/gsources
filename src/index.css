@@ -8,15 +8,17 @@
   --header-text: #17202A;
   --header-text-hover: #808B96;
   --sidebar: #FDFEFE;
-  --sidebar-text: #FDFEFE;
-  --sidebar-close-icon-bg: #D0D3D4;
+  --sidebar-text: #566573;
+  --sidebar-close-icon-bg: #EAECEE;
   --sidebar-icon: #17202A;
-  --sidebar-category-active: #D0D3D4;
-  --sidebar-category-hover: #ECF0F1;
+  --sidebar-category-active: #EAECEE;
+  --sidebar-category-hover: #F0F3F4;
   --item-shadow: #E5E7E9;
   --image-border: #E5E7E9;
   --item-title: #17202A;
   --item-description: #ABB2B9;
+  --footer-text: #17202A;
+  --footer-text1: #D0D3D4;
 }
 
 [color-scheme="dark"] {
@@ -24,11 +26,17 @@
   --header: #17202A;
   --header-text: #FDFEFE;
   --sidebar: #17202A;
+  --sidebar-text: #808B96;
+  --sidebar-close-icon-bg: #273746;
   --sidebar-icon: #FDFEFE;
+  --sidebar-category-active: #273746;
+  --sidebar-category-hover: #1C2833;
   --item-shadow: #2C3E50;
   --image-border: #2C3E50;
   --item-title: #FDFEFE;
   --item-description: #566573;
+  --footer-text: #FDFEFE;
+  --footer-text1: #566573;
 }
 
 html {
