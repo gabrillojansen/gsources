@@ -7,6 +7,12 @@
   --header: #FDFEFE;
   --header-text: #17202A;
   --header-text-hover: #808B96;
+  --sidebar: #FDFEFE;
+  --sidebar-text: #FDFEFE;
+  --sidebar-close-icon-bg: #D0D3D4;
+  --sidebar-icon: #17202A;
+  --sidebar-category-active: #D0D3D4;
+  --sidebar-category-hover: #ECF0F1;
   --item-shadow: #E5E7E9;
   --image-border: #E5E7E9;
   --item-title: #17202A;
@@ -17,6 +23,8 @@
   --body: #17202A;
   --header: #17202A;
   --header-text: #FDFEFE;
+  --sidebar: #17202A;
+  --sidebar-icon: #FDFEFE;
   --item-shadow: #2C3E50;
   --image-border: #2C3E50;
   --item-title: #FDFEFE;
@@ -24,17 +32,16 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    background-color: var(--body);
-    transition: .5s;
+  width: 100%;
+  background-color: var(--body);
 }
 
 /* src/index.css */

@@ -37,8 +37,8 @@ export const Header = () => {
             <div className="cursor-pointer group relative"
             onClick={handleMenuClick} 
             >
-              <IoMdMenu className="text-[25px] sm:text-[30px] text-[--header-text] group-hover:text-[--header-text-hover] transition-[.3s]"/>
-              <p className="w-[15px] h-[15px] bg-[#DC7633] text-[11px] text-[#D0D3D4] rounded-[5px] flex items-center justify-center absolute top-[-1px] right-[-5px] border border-solid border-[#17202A]">{countOfFavoriteItems()}</p>
+              <IoMdMenu className="text-[25px] sm:text-[30px] text-[--header-text] transition-[.3s] group-hover:text-[--header-text-hover]"/>
+              <p className="w-[15px] h-[15px] bg-[#DC7633] text-[11px] text-[--header] rounded-[5px] flex items-center justify-center absolute top-[-1px] right-[-5px] border border-solid border-[--header]">{countOfFavoriteItems()}</p>
             </div>
             <div className="flex items-center gap-[.1rem] cursor-pointer"
             onClick={() => window.scrollTo(0, 0)}
@@ -49,15 +49,15 @@ export const Header = () => {
         </div>
         <div className="flex gap-4">
           <Link to="https://github.com/gabrillojansen">
-            <FaGithub size={18} className="text-[--header-text] cursor-pointer hover:text-[--header-text-hover] transition-[.3s]"/>
+            <FaGithub size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/>
           </Link>
           <Link to="https://www.linkedin.com/in/jansen-gabrillo-82ab96299/">
-            <FaLinkedin size={18} className="text-[--header-text] cursor-pointer hover:text-[--header-text-hover] transition-[.3s]"/>
+            <FaLinkedin size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/>
           </Link>
           <div onClick={hanldeDarkMode}>
             { isDarkMode ? 
-            <MdLightMode size={18} className="text-[--header-text] cursor-pointer hover:text-[--header-text-hover] transition-[.3s]"/> : 
-            <MdOutlineDarkMode size={18} className="text-[--header-text] cursor-pointer hover:text-[--header-text-hover] transition-[.3s]"/> }
+            <MdLightMode size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/> : 
+            <MdOutlineDarkMode size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/> }
           </div>
         </div>
     </div>
