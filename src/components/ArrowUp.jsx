@@ -15,7 +15,7 @@ export const ArrowUp = () => {
 
   return (
     <div
-    className={`fixed right-[1rem] lg:right-[3rem] flex items-center justify-center w-[30px] h-[30px] rounded-[5px] bg-[--sidebar-close-icon-bg] group ${showArrowUp ? "bottom-[1rem] lg:bottom-[3rem]" : "bottom-[-3rem]"}`}
+    className={`fixed right-[1rem] lg:right-[3rem] flex items-center justify-center w-[30px] h-[30px] rounded-[5px] bg-[--arrow-up-bg] group ${showArrowUp ? "bottom-[3rem]" : "bottom-[-3rem]"}`}
     onClick={() => window.scrollTo(0, 0)}>
         <FaArrowUp
         size={20}

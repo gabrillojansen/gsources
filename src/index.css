@@ -19,6 +19,7 @@
   --item-description: #ABB2B9;
   --footer-text: #17202A;
   --footer-text1: #D0D3D4;
+  --arrow-up-bg: #EAECEE;
 }
 
 [color-scheme="dark"] {
@@ -37,6 +38,7 @@
   --item-description: #566573;
   --footer-text: #FDFEFE;
   --footer-text1: #566573;
+  --arrow-up-bg: #273746;
 }
 
 html {
