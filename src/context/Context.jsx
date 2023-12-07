@@ -28,10 +28,11 @@ export const ContextProvider = (props) => {
         setIsDarkMode(!isDarkMode);
     };
     useEffect(() => {
+        const body = document.querySelector("body");
         if (!isDarkMode) {
-            document.querySelector("body").setAttribute("color-scheme", "dark");
+            body.setAttribute("color-scheme", "dark");
         } else {
-            document.querySelector("body").removeAttribute("color-scheme", "dark");
+            body.removeAttribute("color-scheme", "dark");
         }
         localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
     }, [isDarkMode]);
