@@ -30,34 +30,34 @@ export const Header = () => {
 
   return (
     <div className={`w-full flex items-center justify-between p-4 transition 
-    ${isMenuActive ? "shadow-none" : "bg-[--color1] z-10"}
+    ${isMenuActive ? "shadow-none" : "bg-[--header] z-10"}
     ${isHeaderFixed ? "fixed top-0 shadow-lg" : ""}`}
     >
         <div className="flex gap-2 items-center sm:gap-4">
             <div className="cursor-pointer group relative"
             onClick={handleMenuClick} 
             >
-              <IoMdMenu className="text-[25px] sm:text-[30px] text-[--color2] group-hover:text-[#566573] transition-[.3s]"/>
+              <IoMdMenu className="text-[25px] sm:text-[30px] text-[--header-text] group-hover:text-[--header-text-hover] transition-[.3s]"/>
               <p className="w-[15px] h-[15px] bg-[#DC7633] text-[11px] text-[#D0D3D4] rounded-[5px] flex items-center justify-center absolute top-[-1px] right-[-5px] border border-solid border-[#17202A]">{countOfFavoriteItems()}</p>
             </div>
             <div className="flex items-center gap-[.1rem] cursor-pointer"
             onClick={() => window.scrollTo(0, 0)}
             >
               <img className="w-[25px] sm:w-[30px] rounded-[5px]" src={gsourcesLogo} alt="" />
-              <p className="hidden sm:block text-[25px] text-[--color2] cursor-pointer">sources.</p>
+              <p className="hidden sm:block text-[25px] text-[--header-text] cursor-pointer">sources.</p>
             </div>
         </div>
         <div className="flex gap-4">
           <Link to="https://github.com/gabrillojansen">
-            <FaGithub size={18} className="text-[--color2] cursor-pointer hover:text-[#566573] transition-[.3s]"/>
+            <FaGithub size={18} className="text-[--header-text] cursor-pointer hover:text-[--header-text-hover] transition-[.3s]"/>
           </Link>
           <Link to="https://www.linkedin.com/in/jansen-gabrillo-82ab96299/">
-            <FaLinkedin size={18} className="text-[--color2] cursor-pointer hover:text-[#566573] transition-[.3s]"/>
+            <FaLinkedin size={18} className="text-[--header-text] cursor-pointer hover:text-[--header-text-hover] transition-[.3s]"/>
           </Link>
           <div onClick={hanldeDarkMode}>
             { isDarkMode ? 
-            <MdLightMode size={18} className="text-[--color2] cursor-pointer hover:text-[#566573] transition-[.3s]"/> : 
-            <MdOutlineDarkMode size={18} className="text-[--color2] cursor-pointer hover:text-[#566573] transition-[.3s]"/> }
+            <MdLightMode size={18} className="text-[--header-text] cursor-pointer hover:text-[--header-text-hover] transition-[.3s]"/> : 
+            <MdOutlineDarkMode size={18} className="text-[--header-text] cursor-pointer hover:text-[--header-text-hover] transition-[.3s]"/> }
           </div>
         </div>
     </div>

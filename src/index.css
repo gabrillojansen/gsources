@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --color1: #FDFEFE;
-  --color2: #17202A;
-  --color3: #D0D3D4;
+  --body: #FDFEFE;
+  --header: #FDFEFE;
+  --header-text: #17202A;
+  --header-text-hover: #808B96;
   --item-shadow: #E5E7E9;
   --image-border: #E5E7E9;
   --item-title: #17202A;
@@ -13,9 +14,9 @@
 }
 
 [color-scheme="dark"] {
-  --color1: #17202A;
-  --color2: #FDFEFE;
-  --color3: #2C3E50;
+  --body: #17202A;
+  --header: #17202A;
+  --header-text: #FDFEFE;
   --item-shadow: #2C3E50;
   --image-border: #2C3E50;
   --item-title: #FDFEFE;
@@ -28,12 +29,12 @@ html {
 
 * {
     box-sizing: border-box;
-    transition: .5s;
 }
 
 body {
     width: 100%;
-    background-color: var(--color1);
+    background-color: var(--body);
+    transition: .5s;
 }
 
 /* src/index.css */
