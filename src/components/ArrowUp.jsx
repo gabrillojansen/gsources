@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { FaArrowUp } from "react-icons/fa";
 
 export const ArrowUp = () => {
     const [showArrowUp, setShowArrowUp] = useState(false);
 
-    useEffect(() => {
-        const handleArrowUp = () => {
-            if (window.scrollY >= 300) {
-                setShowArrowUp(true);
-            } else {
-                setShowArrowUp(false);
-            }
-          }
-          window.addEventListener("scroll", handleArrowUp);
-    })
+    const handleArrowUp = () => {
+        if (window.scrollY >= 300) {
+            setShowArrowUp(true);
+        } else {
+            setShowArrowUp(false);
+        }
+    }
+    window.addEventListener("scroll", handleArrowUp);
 
   return (
     <div
