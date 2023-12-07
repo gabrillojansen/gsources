@@ -37,6 +37,7 @@ html {
 
 * {
   box-sizing: border-box;
+  transition: .3s;
 }
 
 body {
