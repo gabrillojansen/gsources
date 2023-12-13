@@ -25,6 +25,7 @@ function App() {
           <Route path="/html-templates" element={<Content category="html-templates" />}/>
           <Route path="/icons" element={<Content category="icons" />}/>
           <Route path="/javascript-libraries" element={<Content category="javascript-libraries" />}/>
+          <Route path="/typography" element={<Content category="typography" />}/>
 
           <Route path="/favorites" element={<Favorites />}/>
         </Routes>

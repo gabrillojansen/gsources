@@ -30,6 +30,11 @@ import haikeiLogo from '../assets/haikei-logo.jpg'
 import shecodesLogo from '../assets/shecodes-logo.gif'
 import scrollrevealLogo from '../assets/scrollreveal-logo.png'
 import emblacarouselLogo from '../assets/emblacarousel-logo.jpg'
+import typographicLogo from '../assets/typographic-logo.png'
+import fontawesomeLogo from '../assets/fontawesome-logo.png'
+import cssggLogo from '../assets/cssgg-logo.png'
+import materialiconsLogo from '../assets/materialicons-logo.png'
+import icons8Logo from '../assets/icons8-logo.jpeg'
 
 export const ITEMS = [
     {
@@ -332,8 +337,48 @@ export const ITEMS = [
         id: 38,
         image: emblacarouselLogo,
         title: 'Embla Carousel',
-        description: 'A Lightweight Carousel Library With Fluid Motion And Great Swipe Precision',
+        description: 'A lightweight carousel library with fluid motion and great swipe precision',
         url: 'https://www.embla-carousel.com/',
         category: 'javascript-libraries'
+    },
+    {
+        id: 39,
+        image: typographicLogo,
+        title: 'Typo/Graphic',
+        description: 'Connect to different cultures through poster design',
+        url: 'https://www.typographicposters.com/',
+        category: 'typography'
+    },
+    {
+        id: 40,
+        image: fontawesomeLogo,
+        title: 'Fontawesome',
+        description: 'The webs most popular icon set and toolkit',
+        url: 'https://fontawesome.com/',
+        category: 'icons'
+    },
+    {
+        id: 41,
+        image: cssggLogo,
+        title: 'CSS.gg',
+        description: 'Open-source css, svg and figma ui icons',
+        url: 'https://css.gg/',
+        category: 'icons'
+    },
+    {
+        id: 42,
+        image: materialiconsLogo,
+        title: 'Material Icons',
+        description: 'Delightful, beautifully crafted symbols for common actions and items',
+        url: 'https://fonts.google.com/icons',
+        category: 'icons'
+    },
+    {
+        id: 43,
+        image: icons8Logo,
+        title: 'Icons8',
+        description: '1,318,900 free icons',
+        url: 'https://icons8.com/icons',
+        category: 'icons'
     }
 ];
