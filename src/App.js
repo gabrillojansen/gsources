@@ -8,6 +8,7 @@ import { Content } from "./components/Content";
 import { Footer } from "./components/Footer";
 import { Favorites } from "./pages/Favorites";
 import { ArrowUp } from "./components/ArrowUp";
+import { Hero } from "./components/Hero";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ContextProvider>
         <BrowserRouter>
         <Header />
+        <Hero />
         <Sidebar />
         <Routes>
           <Route path="/" element={<Content category="/" />}/>
