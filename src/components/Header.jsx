@@ -42,7 +42,7 @@ export const Header = () => {
             onClick={() => window.scrollTo(0, 0)}
             >
               <img className="block w-[25px] sm:w-[30px] rounded-[5px] md:hidden" src={gsourcesLogo} alt="" />
-              <p className="hidden font-extrabold text-[25px] text-[--header-text] cursor-pointer md:block">Gsources.</p>
+              <p className="hidden font-extrabold text-[25px] text-[--header-text] cursor-pointer md:block">Gsources</p>
             </Link>
         </div>
         <div className="flex gap-4">

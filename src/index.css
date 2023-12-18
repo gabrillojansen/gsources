@@ -7,9 +7,9 @@
   --header: #FDFEFE;
   --header-text: #17202A;
   --header-text-hover: #808B96;
-  --hero-bg: #212F3D;
-  --hero-title: #FDFEFE;
-  --hero-description: #ABB2B9;
+  --hero-bg: #ECF0F1;
+  --hero-title: #17202A;
+  --hero-description: #566573;
   --sidebar: #FDFEFE;
   --sidebar-text: #566573;
   --sidebar-close-icon-bg: #EAECEE;
@@ -29,6 +29,9 @@
   --body: #17202A;
   --header: #17202A;
   --header-text: #FDFEFE;
+  --hero-bg: #212F3D;
+  --hero-title: #FDFEFE;
+  --hero-description: #ABB2B9;
   --sidebar: #17202A;
   --sidebar-text: #808B96;
   --sidebar-close-icon-bg: #273746;
