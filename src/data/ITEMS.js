@@ -35,6 +35,7 @@ import fontawesomeLogo from '../assets/fontawesome-logo.png'
 import cssggLogo from '../assets/cssgg-logo.png'
 import materialiconsLogo from '../assets/materialicons-logo.png'
 import icons8Logo from '../assets/icons8-logo.jpeg'
+import pinetoolsLogo from '../assets/pinetools-logo.png'
 
 export const ITEMS = [
     {
@@ -380,5 +381,13 @@ export const ITEMS = [
         description: '1,318,900 free icons',
         url: 'https://icons8.com/icons',
         category: 'icons'
-    }
+    },
+    {
+        id: 44,
+        image: pinetoolsLogo,
+        title: 'PineTools',
+        description: 'Free online tools for every situation, work with text, images, and others',
+        url: 'https://pinetools.com/',
+        category: 'design-tools'
+    },
 ];
