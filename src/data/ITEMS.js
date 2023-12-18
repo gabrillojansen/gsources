@@ -388,6 +388,6 @@ export const ITEMS = [
         title: 'PineTools',
         description: 'Free online tools for every situation, work with text, images, and others',
         url: 'https://pinetools.com/',
-        category: 'design-tools'
+        category: 'frontend-tools'
     },
 ];
