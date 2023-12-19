@@ -31,8 +31,8 @@ export const Sidebar = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-8 px-4">
-          <div className="pb-8 border-b border-solid border-[--sidebar-border]">
+        <div className="flex flex-col gap-4 px-4">
+          <div className="pb-4 border-b border-solid border-[--sidebar-border]">
             {sidebar.map((sBar, index) => {
               return <Link
               to={sBar.to}
@@ -45,7 +45,7 @@ export const Sidebar = () => {
             })}
           </div>
 
-          <div className="pb-8 border-b border-solid border-[--sidebar-border]">
+          <div className="pb-4 border-b border-solid border-[--sidebar-border]">
             <h1 className="font-bold text-[--sidebar-title] px-[.3rem] mb-2">Category</h1>
             {sidebarCategory.map((sCategory, index) => {
               return <Link

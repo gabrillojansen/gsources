@@ -28,8 +28,8 @@ export const Header = () => {
 
   return (
     <div className={`w-full flex items-center justify-between p-4 transition 
-    ${isMenuActive ? "shadow-none" : "bg-[--header] z-10"}
-    ${isHeaderFixed ? "fixed top-0 shadow-xl" : ""}`}
+    ${isMenuActive ? "shadow-none" : "bg-[--header] shadow-xl z-10"}
+    ${isHeaderFixed ? "fixed top-0" : ""}`}
     >
         <div className="flex gap-2 items-center sm:gap-4">
             <div className="cursor-pointer group relative"
