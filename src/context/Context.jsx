@@ -65,7 +65,6 @@ export const ContextProvider = (props) => {
         setFavoriteItems((prev) => (
             { ...prev, [itemId]: prev[itemId] === false ? true : false }
         ))
-        console.log(favoriteItems);
     }
 
     // COUNT OF FAVORITE ITEMS
