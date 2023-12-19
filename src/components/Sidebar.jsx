@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import gsourcesLogo from "../assets/gsources-logo.png"
+import { sidebar } from '../data/sidebar';
 import { sidebarCategory } from "../data/sidebarCategory";
 import { sidebarOthers } from "../data/sidebarOthers";
 import { Context } from "../context/Context";
@@ -33,6 +34,18 @@ export const Sidebar = () => {
 
         <div className="flex flex-col gap-8 px-4">
           <ul className="pb-8 border-b border-solid border-[#7B7D7D]">
+            {sidebar.map((sBar) => {
+              return <Link to={sBar.to}
+              onClick={() => handleLinkClicked(sBar.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem]
+              ${isLinkActive === sBar.label ? "bg-[--sidebar-category-active]" : "hover:bg-[--sidebar-category-hover]"}`}>
+              <span className="text-[18px] text-[--sidebar-icon]">{sBar.icon}</span>
+              <p className="text-[15px] text-[--sidebar-text]">{sBar.label}</p>
+              </Link>
+            })}
+          </ul>
+
+          <ul className="pb-8 border-b border-solid border-[#7B7D7D]">
+            <h1 className="font-bold text-[--sidebar-title] px-[.3rem] mb-4">Category</h1>
             {sidebarCategory.map((sCategory, index) => {
               return <Link to={sCategory.to} key={index}>
               <li onClick={() => handleLinkClicked(sCategory.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem]
@@ -43,7 +56,9 @@ export const Sidebar = () => {
               </Link>
             })}
           </ul>
+
           <ul>
+            <h1 className="font-bold text-[--sidebar-title] px-[.3rem] mb-4">Other</h1>
             {sidebarOthers.map((sOthers, index) => {
               return <Link to={sOthers.to} key={index}>
               <li onClick={() => handleLinkClicked(sOthers.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem] relative

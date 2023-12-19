@@ -1,4 +1,3 @@
-import { TbSlash } from 'react-icons/tb';
 import { AiOutlineHtml5 } from 'react-icons/ai';
 import { LuPaintBucket } from 'react-icons/lu';
 import { RiJavascriptLine } from 'react-icons/ri';
@@ -7,11 +6,6 @@ import { MdInsertEmoticon, MdFlipToFront } from 'react-icons/md';
 import { BsFileEarmarkFont } from 'react-icons/bs';
 
 export const sidebarCategory = [
-    { 
-        icon: <TbSlash />,
-        label: 'All',
-        to: '/' 
-    },
     { 
         icon: <IoColorPaletteOutline />,
         label: 'Colors',
