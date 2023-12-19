@@ -10,10 +10,10 @@ export const FavoritesItem = (props) => {
   return (
     <div className="w-[280px] h-[150px] rounded-xl shadow-lg shadow-[--item-shadow] p-4 cursor-pointer transition hover:scale-105 relative">
       <div className="absolute right-4 text-[#DC7633]" onClick={() => handleBookmarkClick(id)}>
-      { favoriteItems[id] === false ? <IoBookmarkOutline size={20}/> : <IoBookmark size={20}/> }
+      {favoriteItems[id] === false ? <IoBookmarkOutline size={20}/> : <IoBookmark size={20}/>}
       </div>
       <Link to={url}>
-        <img className="mb-4 w-[40px] h-[40px] border border-solid border-[--image-border] rounded" src={image} alt="" />
+        <img className="mb-4 w-[40px] h-[40px] border border-solid border-[--image-border] rounded" src={image} alt=""/>
         <h2 className="text-[--item-title]">{title}</h2>
         <p className="text-[10px] text-[--item-description]">{description}</p>
       </Link>

@@ -17,7 +17,7 @@ export const Sidebar = () => {
   } = useContext(Context);
 
   return (
-    <div className="w-full h-full flex flex-col overflow-y-scroll">
+    <div className="w-full h-full flex flex-col">
       <div className={`fixed top-0 pt-[1rem] w-[230px] h-full bg-[--sidebar] shadow-lg z-40
       ${isMenuActive ? "ml-[0]" : "ml-[-500px]"} `}
       >
@@ -26,8 +26,7 @@ export const Sidebar = () => {
             <img className="w-[30px] rounded-[5px]" src={gsourcesLogo} alt="" />
           </div>
           <div className="flex items-center w-[30px] h-[30px] rounded-[5px] bg-[--sidebar-close-icon-bg] group"
-          onClick={handleMenuClick}
-          >
+          onClick={handleMenuClick}>
             <IoMdClose className="text-[20px] text-[--sidebar-text] ml-[5px] cursor-pointer group-hover:rotate-[90deg]"/>
           </div>
         </div>

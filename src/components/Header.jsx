@@ -41,7 +41,7 @@ export const Header = () => {
             <Link to="/" className="flex items-center gap-[.1rem] cursor-pointer"
             onClick={() => window.scrollTo(0, 0)}
             >
-              <img className="block w-[25px] sm:w-[30px] rounded-[5px] md:hidden" src={gsourcesLogo} alt="" />
+              <img className="block w-[25px] sm:w-[30px] rounded-[5px] md:hidden" src={gsourcesLogo} alt=""/>
               <p className="hidden font-extrabold text-[25px] text-[--header-text] cursor-pointer md:block">Gsources</p>
             </Link>
         </div>
@@ -53,9 +53,9 @@ export const Header = () => {
             <FaLinkedin size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/>
           </Link>
           <div onClick={hanldeDarkMode}>
-            { isDarkMode ? 
+            {isDarkMode ? 
             <MdLightMode size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/> : 
-            <MdOutlineDarkMode size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/> }
+            <MdOutlineDarkMode size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/>}
           </div>
         </div>
     </div>
