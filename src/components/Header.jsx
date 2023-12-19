@@ -27,8 +27,8 @@ export const Header = () => {
   window.addEventListener("scroll", handleHeaderFixed);
 
   return (
-    <div className={`w-full flex items-center justify-between p-4 transition 
-    ${isMenuActive ? "shadow-none" : "bg-[--header] shadow-xl z-10"}
+    <div className={`w-full flex items-center justify-between p-4 transition z-10
+    ${isMenuActive ? "shadow-none" : "bg-[--header] shadow-xl"}
     ${isHeaderFixed ? "fixed top-0" : ""}`}
     >
         <div className="flex gap-2 items-center sm:gap-4">
