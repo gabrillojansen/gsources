@@ -18,20 +18,20 @@ export const Sidebar = () => {
     isLinkActive,
   } = useContext(Context);
 
-  const handleOutsideClick = (event) => {
-    if (isMenuActive && !sidebarRef.current.contains(event.target)) {
-      setIsMenuActive(!isMenuActive)
-    }
-  };
-
   useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (isMenuActive && !sidebarRef.current.contains(event.target)) {
+        setIsMenuActive(!isMenuActive);
+      }
+    };
     document.addEventListener('mousedown', handleOutsideClick);
     document.addEventListener('touchstart', handleOutsideClick);
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick);
       document.removeEventListener('touchstart', handleOutsideClick);
     };
-  }, [isMenuActive]);
+  }, [isMenuActive, setIsMenuActive, sidebarRef]);
+  
 
   console.log(isMenuActive);
 
