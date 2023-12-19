@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const Hero = () => {
+export const Banner = () => {
   return (
-    <div className="w-full p-16 bg-[--hero-bg] sm:text-center md:text-left">
+    <div className="w-full p-16 bg-[--hero-bg] text-center md:text-left">
         <div>
             <div className="mb-8">
                 <h1 className="text-5xl font-extrabold text-[--hero-title]">Gsources</h1>
