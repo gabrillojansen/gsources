@@ -82,6 +82,7 @@ export const ContextProvider = (props) => {
     const ContextValue = {
         ITEMS,
         handleMenuClick,
+        setIsMenuActive,
         isMenuActive,
         hanldeDarkMode,
         isDarkMode,
@@ -89,7 +90,7 @@ export const ContextProvider = (props) => {
         favoriteItems,
         countOfFavoriteItems,
         handleLinkClicked,
-        isLinkActive
+        isLinkActive,
     }
 
   return (

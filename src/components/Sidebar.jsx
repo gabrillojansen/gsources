@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React, { useContext, useEffect, useRef } from "react"
 import gsourcesLogo from "../assets/gsources-logo.png"
 import { sidebar } from '../data/sidebar';
 import { sidebarCategory } from "../data/sidebarCategory";
@@ -8,17 +8,36 @@ import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 export const Sidebar = () => {
+  const sidebarRef = useRef(null);
   const { 
     handleMenuClick,
+    setIsMenuActive,
     isMenuActive,
     countOfFavoriteItems,
     handleLinkClicked,
-    isLinkActive 
+    isLinkActive,
   } = useContext(Context);
+
+  const handleOutsideClick = (event) => {
+    if (isMenuActive && !sidebarRef.current.contains(event.target)) {
+      setIsMenuActive(!isMenuActive)
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleOutsideClick);
+    document.addEventListener('touchstart', handleOutsideClick);
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+      document.removeEventListener('touchstart', handleOutsideClick);
+    };
+  }, [isMenuActive]);
+
+  console.log(isMenuActive);
 
   return (
     <div className="w-full h-full flex flex-col">
-      <div className={`fixed top-0 pt-[1rem] w-[230px] h-full bg-[--sidebar-bg] shadow-2xl z-40
+      <div ref={sidebarRef} className={`fixed top-0 pt-[1rem] w-[230px] h-full bg-[--sidebar-bg] shadow-2xl z-40
       ${isMenuActive ? "ml-[0]" : "ml-[-500px]"} `}
       >
         <div className="flex items-center justify-between px-4 mb-8">
