@@ -18,7 +18,7 @@ export const Sidebar = () => {
 
   return (
     <div className="w-full h-full flex flex-col">
-      <div className={`fixed top-0 pt-[1rem] w-[230px] h-full bg-[--sidebar] shadow-lg z-40
+      <div className={`fixed top-0 pt-[1rem] w-[230px] h-full bg-[--sidebar-bg] shadow-2xl z-40
       ${isMenuActive ? "ml-[0]" : "ml-[-500px]"} `}
       >
         <div className="flex items-center justify-between px-4 mb-8">
@@ -36,7 +36,7 @@ export const Sidebar = () => {
             {sidebar.map((sBar) => {
               return <Link to={sBar.to}
               onClick={() => handleLinkClicked(sBar.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem]
-              ${isLinkActive === sBar.label ? "bg-[--sidebar-category-active]" : "hover:bg-[--sidebar-category-hover]"}`}>
+              ${isLinkActive === sBar.label ? "bg-[--sidebar-link-active]" : "hover:bg-[--sidebar-link-hover]"}`}>
               <span className="text-[18px] text-[--sidebar-icon]">{sBar.icon}</span>
               <p className="text-[15px] text-[--sidebar-text]">{sBar.label}</p>
               </Link>
@@ -49,7 +49,7 @@ export const Sidebar = () => {
               return <Link
               to={sCategory.to} key={index}
               onClick={() => handleLinkClicked(sCategory.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem]
-              ${isLinkActive === sCategory.label ? "bg-[--sidebar-category-active]" : "hover:bg-[--sidebar-category-hover]"}`}>
+              ${isLinkActive === sCategory.label ? "bg-[--sidebar-link-active]" : "hover:bg-[--sidebar-link-hover]"}`}>
                 <span className="text-[18px] text-[--sidebar-icon]">{sCategory.icon}</span>
                 <p className="text-[15px] text-[--sidebar-text]">{sCategory.label}</p>
               </Link>
@@ -62,7 +62,7 @@ export const Sidebar = () => {
               return <Link 
               to={sOthers.to} key={index}
               onClick={() => handleLinkClicked(sOthers.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem] relative
-              ${isLinkActive === sOthers.label ? "bg-[--sidebar-category-active]" : "hover:bg-[--sidebar-category-hover]"}`}>
+              ${isLinkActive === sOthers.label ? "bg-[--sidebar-link-active]" : "hover:bg-[--sidebar-link-hover]"}`}>
                 <span className="text-[18px] text-[--sidebar-icon]">{sOthers.icon}</span>
                 <p className="text-[15px] text-[--sidebar-text]">{sOthers.label}</p>
                 <p className="absolute right-2 w-[20px] h-[20px] bg-[#DC7633] text-[13px] text-[#D0D3D4] rounded-[5px] flex items-center justify-center">{countOfFavoriteItems()}</p>

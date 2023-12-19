@@ -3,27 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --body: #FDFEFE;
-  --header: #FDFEFE;
+  --body: #ECF0F1;
+  --header: #ECF0F1;
   --header-text: #17202A;
   --header-text-hover: #808B96;
-  --hero-bg: #ECF0F1;
+  --hero-bg: #F7F9F9;
   --hero-title: #17202A;
   --hero-description: #566573;
-  --sidebar: #FDFEFE;
+  --sidebar-bg: #F7F9F9;
   --sidebar-text: #566573;
   --sidebar-close-icon-bg: #EAECEE;
   --sidebar-icon: #17202A;
-  --sidebar-category-active: #EAECEE;
-  --sidebar-category-hover: #F0F3F4;
+  --sidebar-link-active: #D7DBDD;
+  --sidebar-link-hover: #ECF0F1;
   --sidebar-border: #D0D3D4;
-  --item-shadow: #E5E7E9;
+  --item-bg: #F7F9F9;
   --image-border: #E5E7E9;
   --item-title: #17202A;
   --item-description: #ABB2B9;
   --footer-text: #17202A;
   --footer-text1: #D0D3D4;
-  --arrow-up-bg: #EAECEE;
+  --arrow-up-bg: #F7F9F9;
 }
 
 [color-scheme="dark"] {
@@ -33,15 +33,15 @@
   --hero-bg: #212F3D;
   --hero-title: #FDFEFE;
   --hero-description: #ABB2B9;
-  --sidebar: #17202A;
+  --sidebar-bg: #1C2833;
   --sidebar-title: #FDFEFE;
   --sidebar-text: #808B96;
   --sidebar-close-icon-bg: #273746;
   --sidebar-icon: #FDFEFE;
-  --sidebar-category-active: #273746;
-  --sidebar-category-hover: #1C2833;
+  --sidebar-link-active: #17202A;
+  --sidebar-link-hover: #212F3D;
   --sidebar-border: #273746;
-  --item-shadow: #2C3E50;
+  --item-bg: #1C2833;
   --image-border: #2C3E50;
   --item-title: #FDFEFE;
   --item-description: #566573;
