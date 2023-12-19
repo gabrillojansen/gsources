@@ -33,7 +33,7 @@ export const Sidebar = () => {
         </div>
 
         <div className="flex flex-col gap-8 px-4">
-          <div className="pb-8 border-b border-solid border-[#7B7D7D]">
+          <div className="pb-8 border-b border-solid border-[--sidebar-border]">
             {sidebar.map((sBar) => {
               return <Link to={sBar.to}
               onClick={() => handleLinkClicked(sBar.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem]
@@ -44,8 +44,8 @@ export const Sidebar = () => {
             })}
           </div>
 
-          <div className="pb-8 border-b border-solid border-[#7B7D7D]">
-            <h1 className="font-bold text-[--sidebar-title] px-[.3rem] mb-4">Category</h1>
+          <div className="pb-8 border-b border-solid border-[--sidebar-border]">
+            <h1 className="font-bold text-[--sidebar-title] px-[.3rem] mb-2">Category</h1>
             {sidebarCategory.map((sCategory, index) => {
               return <Link
               to={sCategory.to} key={index}
@@ -58,7 +58,7 @@ export const Sidebar = () => {
           </div>
 
           <div>
-            <h1 className="font-bold text-[--sidebar-title] px-[.3rem] mb-4">Other</h1>
+            <h1 className="font-bold text-[--sidebar-title] px-[.3rem] mb-2">Other</h1>
             {sidebarOthers.map((sOthers, index) => {
               return <Link 
               to={sOthers.to} key={index}

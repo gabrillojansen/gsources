@@ -16,6 +16,7 @@
   --sidebar-icon: #17202A;
   --sidebar-category-active: #EAECEE;
   --sidebar-category-hover: #F0F3F4;
+  --sidebar-border: #D0D3D4;
   --item-shadow: #E5E7E9;
   --image-border: #E5E7E9;
   --item-title: #17202A;
@@ -39,6 +40,7 @@
   --sidebar-icon: #FDFEFE;
   --sidebar-category-active: #273746;
   --sidebar-category-hover: #1C2833;
+  --sidebar-border: #273746;
   --item-shadow: #2C3E50;
   --image-border: #2C3E50;
   --item-title: #FDFEFE;
