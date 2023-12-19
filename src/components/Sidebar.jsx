@@ -32,9 +32,6 @@ export const Sidebar = () => {
     };
   }, [isMenuActive, setIsMenuActive, sidebarRef]);
   
-
-  console.log(isMenuActive);
-
   return (
     <div className="w-full h-full flex flex-col">
       <div ref={sidebarRef} className={`fixed top-0 pt-[1rem] w-[230px] h-full bg-[--sidebar-bg] shadow-2xl z-40
