@@ -17,11 +17,11 @@ export const Sidebar = () => {
   } = useContext(Context);
 
   return (
-    <div className="w-fdivl h-fdivl flex flex-col">
-      <div className={`fixed top-0 pt-[1rem] w-[230px] h-fdivl bg-[--sidebar] shadow-lg z-40
+    <div className="w-full h-full flex flex-col">
+      <div className={`fixed top-0 pt-[1rem] w-[230px] h-full bg-[--sidebar] shadow-lg z-40
       ${isMenuActive ? "ml-[0]" : "ml-[-500px]"} `}
       >
-        <div className="flex items-center justify-between px-4 mb-8">
+        <div className="flex items-center justify-between px-4 mb-8 overflow-y-scroll">
           <div className="flex items-center cursor-pointer">
             <img className="w-[30px] rounded-[5px]" src={gsourcesLogo} alt="" />
           </div>
