@@ -72,7 +72,7 @@ export const ContextProvider = (props) => {
     const countOfFavoriteItems = () => {
         let count = 0;
         for (let i = 1; i < ITEMS.length + 1; i++) {
-            if (favoriteItems[i] !== false) {
+            if (favoriteItems[i] === true) {
                 count += 1;
             }
         }
