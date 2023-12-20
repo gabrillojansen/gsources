@@ -21,20 +21,20 @@ export const ContextProvider = (props) => {
 
     // DARKMODE
     const [isDarkMode, setIsDarkMode] = useState(() => {
-        const storedisDarkMode = localStorage.getItem("isDarkMode");
+        const storedisDarkMode = localStorage.getItem('isDarkMode');
         return storedisDarkMode ? JSON.parse(storedisDarkMode) : false;
     });
     const handleDarkMode = () => {
         setIsDarkMode(!isDarkMode);
     };
     useEffect(() => {
-        const body = document.querySelector("body");
+        const body = document.querySelector('body');
         if (!isDarkMode) {
-            body.setAttribute("color-scheme", "dark");
+            body.setAttribute('color-scheme', 'dark');
         } else {
-            body.removeAttribute("color-scheme", "dark");
+            body.removeAttribute('color-scheme', 'dark');
         }
-        localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
+        localStorage.setItem('isDarkMode', JSON.stringify(isDarkMode));
     }, [isDarkMode]);
     
     // LINKS
@@ -47,11 +47,11 @@ export const ContextProvider = (props) => {
 
     // FAVORITE ITEMS
     const [favoriteItems, setFavoriteItems] = useState(() => {
-        const storedFavorites = JSON.parse(localStorage.getItem("isFavorites"));
+        const storedFavorites = JSON.parse(localStorage.getItem('isFavorites'));
         return storedFavorites || getDefaultFavorites();
     });
     useEffect(() => {
-        localStorage.setItem("isFavorites", JSON.stringify(favoriteItems));
+        localStorage.setItem('isFavorites', JSON.stringify(favoriteItems));
     }, [favoriteItems])
     
     // BOOKAMRK
