@@ -49,7 +49,9 @@ export const ContextProvider = (props) => {
     }
     useEffect(() => {
         localStorage.setItem("isLinkActive", JSON.stringify(isLinkActive));
-        setIsLinkActive('/');
+        if (isLinkActive !== '/') {
+            setIsLinkActive('/');
+        }
     }, [isLinkActive])
 
     // FAVORITE ITEMS
