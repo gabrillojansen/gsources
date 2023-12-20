@@ -38,18 +38,12 @@ export const ContextProvider = (props) => {
     }, [isDarkMode]);
     
     // LINKS
-    const [isLinkActive, setIsLinkActive] = useState(() => {
-        const storedIsLinkActive = localStorage.getItem("isLinkActive");
-        return storedIsLinkActive ? JSON.parse(storedIsLinkActive) : "/";
-    });
+    const [isLinkActive, setIsLinkActive] = useState('/');
     const handleLinkClicked = (to) => {
         setIsLinkActive(to)
         handleMenuClick();
         window.scrollTo(0, 0);
     }
-    useEffect(() => {
-        localStorage.setItem("isLinkActive", JSON.stringify(isLinkActive));
-    }, [isLinkActive])
 
     // FAVORITE ITEMS
     const [favoriteItems, setFavoriteItems] = useState(() => {
