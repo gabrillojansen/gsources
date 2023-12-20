@@ -38,8 +38,9 @@ export const Header = () => {
               <IoMdMenu className="text-[25px] sm:text-[30px] text-[--header-text] transition-[.3s] group-hover:text-[--header-text-hover]"/>
               <p className="w-[15px] h-[15px] bg-[#DC7633] text-[11px] text-[--header] rounded-[5px] flex items-center justify-center absolute top-[-1px] right-[-5px] border border-solid border-[--header]">{countOfFavoriteItems()}</p>
             </div>
-            <Link to="/" className="flex items-center gap-[.1rem] cursor-pointer"
-            onClick={() => window.scrollTo(0, 0)}
+            <Link
+            to="https://www.facebook.com/gabrillojansen"
+            className="flex items-center gap-[.1rem] cursor-pointer"
             >
               <img className="block w-[25px] sm:w-[30px] rounded-[5px] md:hidden" src={gsourcesLogo} alt=""/>
               <p className="hidden font-extrabold text-[25px] text-[--header-text] cursor-pointer md:block">Gsources</p>
