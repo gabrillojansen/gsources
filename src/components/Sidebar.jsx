@@ -53,8 +53,8 @@ export const Sidebar = () => {
               return <Link
               to={sBar.to}
               key={index}
-              onClick={() => handleLinkClicked(sBar.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem]
-              ${isLinkActive === sBar.label ? "bg-[--sidebar-link-active]" : "hover:bg-[--sidebar-link-hover]"}`}>
+              onClick={() => handleLinkClicked(sBar.to)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem]
+              ${isLinkActive === sBar.to ? "bg-[--sidebar-link-active]" : "hover:bg-[--sidebar-link-hover]"}`}>
               <span className="text-[18px] text-[--sidebar-icon]">{sBar.icon}</span>
               <p className="text-[15px] text-[--sidebar-text]">{sBar.label}</p>
               </Link>
@@ -67,8 +67,8 @@ export const Sidebar = () => {
               return <Link
               to={sCategory.to}
               key={index}
-              onClick={() => handleLinkClicked(sCategory.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem]
-              ${isLinkActive === sCategory.label ? "bg-[--sidebar-link-active]" : "hover:bg-[--sidebar-link-hover]"}`}>
+              onClick={() => handleLinkClicked(sCategory.to)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem]
+              ${isLinkActive === sCategory.to ? "bg-[--sidebar-link-active]" : "hover:bg-[--sidebar-link-hover]"}`}>
                 <span className="text-[18px] text-[--sidebar-icon]">{sCategory.icon}</span>
                 <p className="text-[15px] text-[--sidebar-text]">{sCategory.label}</p>
               </Link>
@@ -81,8 +81,8 @@ export const Sidebar = () => {
               return <Link 
               to={sOthers.to}
               key={index}
-              onClick={() => handleLinkClicked(sOthers.label)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem] relative
-              ${isLinkActive === sOthers.label ? "bg-[--sidebar-link-active]" : "hover:bg-[--sidebar-link-hover]"}`}>
+              onClick={() => handleLinkClicked(sOthers.to)} className={`flex items-center gap-[1rem] cursor-pointer rounded p-[.5rem] px-[.3rem] relative
+              ${isLinkActive === sOthers.to ? "bg-[--sidebar-link-active]" : "hover:bg-[--sidebar-link-hover]"}`}>
                 <span className="text-[18px] text-[--sidebar-icon]">{sOthers.icon}</span>
                 <p className="text-[15px] text-[--sidebar-text]">{sOthers.label}</p>
                 <p className="absolute right-2 w-[20px] h-[20px] bg-[#DC7633] text-[13px] text-[#D0D3D4] rounded-[5px] flex items-center justify-center">{countOfFavoriteItems()}</p>

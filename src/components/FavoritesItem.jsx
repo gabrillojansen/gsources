@@ -8,7 +8,7 @@ export const FavoritesItem = (props) => {
   const { handleBookmarkClick, favoriteItems } = useContext(Context);
 
   return (
-    <div className="w-[280px] h-[150px] rounded-xl shadow-lg shadow-[--item-shadow] p-4 cursor-pointer transition hover:scale-105 relative">
+    <div className="w-[250px] md:w-[280px] h-[150px] rounded-xl bg-[--item-bg] p-4 cursor-pointer transition hover:scale-105 relative">
       <div className="absolute right-4 text-[#DC7633]" onClick={() => handleBookmarkClick(id)}>
       {favoriteItems[id] === false ? <IoBookmarkOutline size={20}/> : <IoBookmark size={20}/>}
       </div>
