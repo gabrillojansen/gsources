@@ -12,7 +12,7 @@ export const Header = () => {
   const { 
     handleMenuClick,
     isMenuActive,
-    hanldeDarkMode,
+    handleDarkMode,
     isDarkMode,
     countOfFavoriteItems
   } = useContext(Context);
@@ -48,15 +48,15 @@ export const Header = () => {
         </div>
         <div className="flex gap-4">
           <Link to="https://github.com/gabrillojansen">
-            <FaGithub size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/>
+            <FaGithub size={18} className="text-[--header-text] cursor-pointer transition-[.3s]ointer hover:text-[--header-text-hover]"/>
           </Link>
           <Link to="https://www.linkedin.com/in/jansen-gabrillo-82ab96299/">
-            <FaLinkedin size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/>
+            <FaLinkedin size={18} className="text-[--header-text] cursor-pointer transition-[.3s]ointer hover:text-[--header-text-hover]"/>
           </Link>
-          <div onClick={hanldeDarkMode}>
+          <div onClick={handleDarkMode}>
             {isDarkMode ? 
-            <MdLightMode size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/> : 
-            <MdOutlineDarkMode size={18} className="text-[--header-text] cursor-p transition-[.3s]ointer hover:text-[--header-text-hover]"/>}
+            <MdLightMode size={18} className="text-[--header-text] cursor-pointer transition-[.3s]ointer hover:text-[--header-text-hover]"/> : 
+            <MdOutlineDarkMode size={18} className="text-[--header-text] cursor-pointer transition-[.3s]ointer hover:text-[--header-text-hover]"/>}
           </div>
         </div>
     </div>
