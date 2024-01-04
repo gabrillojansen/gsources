@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+[color-scheme="light"] {
   --body: #ECF0F1;
   --header: #ECF0F1;
   --header-text: #17202A;

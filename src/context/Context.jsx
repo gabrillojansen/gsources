@@ -32,7 +32,7 @@ export const ContextProvider = (props) => {
         if (!isDarkMode) {
             body.setAttribute("color-scheme", "dark");
         } else {
-            body.removeAttribute("color-scheme", "dark");
+            body.setAttribute("color-scheme", "light");
         }
         localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
     }, [isDarkMode]);
